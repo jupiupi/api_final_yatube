@@ -30,4 +30,4 @@ class CommentAdmin(admin.ModelAdmin):
 class FollowAdmin(admin.ModelAdmin):
     list_display = ('id', 'user', 'following')
     search_fields = ('user__username', 'following__username')
-    list_filter = ('user', 'following') 
+    list_filter = ('user', 'following')
